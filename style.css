@@ -1,0 +1,121 @@
+* {
+    font-family: Philosopher, Helvetica,Garamond, serif;
+}
+
+
+html {
+    min-height: 100%;
+    background-color: #e6e9e9;
+    background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -o-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -moz-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -ms-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 800px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #545454;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+
+#header {
+    border-top: 0px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+/*h2 {
+    margin-top: 1.3em;
+}*/
+
+
+img {
+    background: transparent;
+    border: 0px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0px;
+    display: block;
+    margin: 0em auto;
+    max-width: 95%;
+    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+}
+
+
+#dlicon {
+    display: inline;
+    position: relative;
+    margin-bottom: -0.2em;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #223333;
+}
+
+a:visited {
+    color: #223333;
+}
+
+a:hover {
+    color: #bbcccc;
+}
+
+a:active {
+    color: #ccdddd;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+    height: 1.5em;
+    padding-right: 2em;
+/*    width: 5.3em;*/
+    /*border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;*/
+}
+
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+
+span.codedirection {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
